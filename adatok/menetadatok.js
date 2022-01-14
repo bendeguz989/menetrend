@@ -20,7 +20,7 @@ module.exports.vonatlista = function (){
     })
 }
 */
-module.exports.vonatlista = function ( callback ){
+module.exports.vonatLista = function ( callback ){
     myQuery = "SELECT vId, vNev FROM vonat"
     connection.query(myQuery, (err, result, fields) => {
         if (err)
@@ -30,7 +30,7 @@ module.exports.vonatlista = function ( callback ){
         }
     })
 
-module.exports.allomaslista = function ( callback ){
+module.exports.allomasLista = function ( callback ){
         myQuery = "SELECT aId, aNev FROM allomas"
         connection.query(myQuery, (err, result, fields) => {
             if (err)
