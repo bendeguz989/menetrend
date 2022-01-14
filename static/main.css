@@ -1,9 +1,9 @@
 body{
-    background-color: navy;
+    background-color: rgba(0, 0, 128, 0.479);
     color: red;
 }
 #container{
-    background-color: azure;
+    background-color: rgb(24, 202, 202);
     width: 800px;
     padding: 8px;
     margin: 5px auto 5px auto;

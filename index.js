@@ -5,6 +5,8 @@ const port = 5555;
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
@@ -13,6 +15,7 @@ app.get('/', (req, res) => {
 
 app.get('/list', (req, res) => {
     dbData.vonatLista((err, vonat) => {
+        console.log("szia");
         if (err) throw err;
         dbData.allomasLista((err2, allomas) =>{
             if(err2) throw err2;
